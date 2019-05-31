@@ -11,14 +11,14 @@ public class Mars {
 
 	}
 
-	public void initMars() throws IOException {
+	public void initMars(){
 		for(int i=0; i< mars.length; i++){
 			forschleife (i, mars[0].length);
 
 		}
 	}
 
-	private void forschleife(int x ,int y) throws IOException {
+	private void forschleife(int x ,int y){
 		for(int j=0; j<y; j++){
 			this.mars [x][j]=new Umgebung();
 		}
