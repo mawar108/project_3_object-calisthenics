@@ -1,0 +1,6 @@
+Zur Funktion des Programms:
+Das Programm lässt sich kompilieren und ausführen.
+Das Programm funktioniert noch nicht wie gefordert; Zum Beispiel wurde das Bewegungsverhalten des Rovers noch nicht implementiert. (-51P)
+
+Nicht Bestanden mit 49/100 Punkten. Um das Projekt zu bestehen muss das Programm wie in der Aufgabenstellung gefordert kompilieren/funktionieren. Für die Nachreichung ist bis zum 14.06.2019 um 23:59 Uhr Zeit.
+CL
