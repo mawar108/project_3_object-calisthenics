@@ -5,11 +5,8 @@ public class Mars {
 	private Objekt [][] mars;
 
 	public Mars(Wert x, Wert y){
-		this.mars= x.Marsgröße(x,y);
+		this.mars= x.Marsgroeße(x,y);
 		createMars();
-		//Roverposition roverposition= new Roverposition(x.WertTeilen(x,new Wert(2)), y.WertTeilen(y,new Wert(2)));
-		//Rover rover= new Rover(roverposition, new RoverOben());
-		//rover.createRover(mars);
 	}
 
 	public Objekt getObjekt(Roverposition roverposition){
@@ -17,7 +14,7 @@ public class Mars {
 	}
 
 	public void createRover(Roverposition roverposition , Objekt objekt){
-		roverposition.createRover(mars,objekt);
+		roverposition.createRover(mars,objekt,roverposition);
 	}
 
 	private void createMars(){

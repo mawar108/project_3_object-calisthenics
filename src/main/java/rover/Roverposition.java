@@ -13,17 +13,8 @@ public class Roverposition {
 		return new Roverposition(x.WertPlus(this.x,x),y.WertPlus(this.y,y));
 	}
 
-	public Roverposition PostionMinusRechnen(Wert x, Wert y){
-		return new Roverposition(x.WertMinus(this.x,x),y.WertMinus(this.y,y));
-	}
-
-	/*public void PostionMinusRechnen(Wert x, Wert y){
-		this.x= x.WertMinus(this.x,x);
-		this.y= y.WertMinus(this.y,y);
-	}*/
-
-	public void createRover(Objekt mars [][], Objekt objekt){
-		x.createRover(mars,x,y,objekt);
+	public void createRover(Objekt mars [][], Objekt objekt, Roverposition roverposition){
+		x.createRover(mars,roverposition.x,roverposition.y,objekt);
 	}
 
 	public Objekt checkPosition(Objekt mars [][], Roverposition roverposition){

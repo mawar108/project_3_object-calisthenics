@@ -9,7 +9,7 @@ public class RoverUnten extends Rover implements Move{
 			super(roverposition,mars);
 			this.mars=mars;
 			this.roverposition=roverposition;
-			mars.createRover(roverposition,new Objekt("v"));
+			setRover(new Objekt("v"));
 
 		}
 

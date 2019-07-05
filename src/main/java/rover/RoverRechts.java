@@ -8,18 +8,19 @@ public class RoverRechts extends Rover implements Move {
 		super(roverposition,mars);
 		this.mars=mars;
 		this.roverposition=roverposition;
-		mars.createRover(roverposition,new Objekt(">"));
+		setRover(new Objekt(">"));
 
 	}
 
 
 	public void vorwärts() {
-
+		new RoverRechts(roverposition.PostionPlusRechnen(new Wert(1),new Wert(0)),mars);
 	}
 
 
 	public void rechts() {
-
+		super.setRoverposition(roverposition);
+		new RoverUnten(roverposition,mars);
 	}
 
 

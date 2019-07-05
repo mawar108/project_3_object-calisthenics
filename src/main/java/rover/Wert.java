@@ -7,23 +7,16 @@ public class Wert {
 		this.wert= wert;
 	}
 
-	public Objekt [][] Marsgröße(Wert x, Wert y){
+	public Objekt [][] Marsgroeße(Wert x, Wert y){
 		return new Objekt[x.wert] [y.wert];
 	}
 
 	public Wert WertTeilen(Wert x, Wert y){
-		Wert geteilterWert= new Wert(x.wert/y.wert);
-		return geteilterWert;
+		return new Wert(x.wert/y.wert);
 	}
 
 	public Wert WertPlus(Wert x, Wert y){
-		Wert plusWert= new Wert(x.wert+y.wert);
-		return plusWert;
-	}
-
-	public Wert WertMinus(Wert x, Wert y){
-		Wert minusWert= new Wert(x.wert-y.wert);
-		return minusWert;
+		return new Wert(x.wert+y.wert);
 	}
 
 	public void createRover(Objekt mars [][], Wert x, Wert y, Objekt objekt){
